@@ -5,7 +5,7 @@ console.log('snack 4')
 // Ogni persona ha un nome, un cognome e un’età.
 // Crea quindi un nuovo array inserendo, per ogni persona,
 //  una frase con il nome e cognome e l’indicazione se può guidare, in base all’età.
-
+let string = []
 let person = [
     {
         nome: 'Gabriel',
@@ -28,3 +28,12 @@ let person = [
         eta: 15,
     }
 ]
+
+console.log(person, string)
+
+for (i = 0; i < person.length; i++) {
+    string.push(person[i].nome)
+    console.log(person[i].nome)
+}
+
+console.log(string)
